@@ -1,8 +1,10 @@
 <%- include('partials/header'); -%>
+<div>
+  <h1 class="headline">דתיים במדמ"ח - חומר לשבת</h1>
+  <p class="content" ><%- startingContent %></p>
+</div>
 
-<h1 class="headline">דתיים במדמ"ח - חומר לשבת</h1>
-<p class="content" ><%- startingContent %></p>
-<div class="content">
+<div class="content torah">
   <%posts.reverse().forEach(function(post){%>
   <h1 class="text-right"><%=post.title%></h1>
   <p id="content"><%=post.content.substring(0,100)+" ..."%>  <a href="/posts/<%=post._id%>">קרא עוד</a></p>
@@ -10,5 +12,5 @@
   <%});%>
 
 </div>
-<iframe class="shabat" scrolling="auto" height="330" width="180" frameborder="0" src="https://mylush.net/sah.html"></iframe>
+<iframe dir="ltr" class="shabat" scrolling="auto" height="330" width="180" frameborder="0" src="https://mylush.net/sah.html"></iframe>
 <%- include('partials/footer'); -%>

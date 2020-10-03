@@ -23,7 +23,7 @@
 }
 .shabat{
     top: 10px;
-    left: 20px;
+    float: left;
 }
 .join-us{
     font-family: 'Heebo', sans-serif;
@@ -48,13 +48,8 @@
     color: #fff;
 }
 
-.copyright{
-
-    float: left;
-}
-@media screen and (max-width: 768px){
-.content{
-    float: right;
-    width: 500px;
+@media screen and (max-width: 600px){
+.torah{
+    width: 250px;
 }
 }
