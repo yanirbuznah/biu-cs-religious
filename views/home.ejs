@@ -1,13 +1,13 @@
 <%- include('partials/header'); -%>
 <div>
   <h1 class="headline">דתיים במדמ"ח - חומר לשבת</h1>
-  <p class="content" ><%- startingContent %></p>
+  <p ><%- startingContent %></p>
 </div>
 
 <div class="col-md-10 col-sm-8 col-xs-6 content">
   <%posts.reverse().forEach(function(post){%>
   <h1 class="text-right"><%=post.title%></h1>
-  <p id="content"><%=post.content.substring(0,100)+" ..."%>  <a href="/posts/<%=post._id%>">קרא עוד</a></p>
+  <p><%=post.content.substring(0,100)+" ..."%>  <a href="/posts/<%=post._id%>">קרא עוד</a></p>
 
   <%});%>
 

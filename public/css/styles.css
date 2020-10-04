@@ -1,7 +1,10 @@
-html{
-    font-size: 14px;
-}
 
+h1,p{
+    font-family: 'Heebo', sans-serif;
+}
+p{
+    font-size: 16px;
+}
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -21,16 +24,19 @@ html{
 .headline{
     font-family: 'Suez One', serif;
 }
-.content{
-    font-family: 'Heebo', sans-serif;
+
+.content {
     float: right;
+}
+.post-content{
+    font-size: 20px;
 }
 .shabat{
     top: 10px;
     float: left;
 }
 .join-us{
-    font-family: 'Heebo', sans-serif;
+
     text-align: center;
 }
 .footer-padding {
